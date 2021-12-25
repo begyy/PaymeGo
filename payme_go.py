@@ -14,7 +14,7 @@ class PayMeGo:
     def get_header(self) -> Dict[str, str]:
         return {'X-Auth': self.token}
 
-    def pay(self, amount: int, kkm_id: str, device_id: str, transaction_id: str, qr_code: str):
+    def pay(self, amount: int, kkm_id: str, device_id: str, transaction_id: str, qr_code: str) -> Dict[str, str]:
         """
         :param amount: int 1000 UZS
         :param kkm_id: 'test-kkm'
@@ -30,7 +30,7 @@ class PayMeGo:
         _id = receipts_create['result']['receipt']['_id']
         return self._receipts_pay(_id, qr_code)
 
-    def _receipts_create(self, amount: int, kkm_id: str, device_id: str, transaction_id: str):
+    def _receipts_create(self, amount: int, kkm_id: str, device_id: str, transaction_id: str) -> Dict[str, str]:
         """
 
         :param amount: INT
