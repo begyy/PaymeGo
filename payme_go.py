@@ -33,7 +33,7 @@ class PayMeGo:
     def _receipts_create(self, amount: int, kkm_id: str, device_id: str, transaction_id: str):
         """
 
-        :param amount: INT 1000
+        :param amount: INT
         :param kkm_id: STR
         :param device_id: STR
         :param transaction_id: STR
