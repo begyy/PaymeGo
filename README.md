@@ -1,5 +1,4 @@
 # PaymeGo
-![image](https://user-images.githubusercontent.com/44405438/147382389-9244b35f-3417-4774-8331-b36933a55bef.png)
 
 ```python
 from payme_go import PayMeGo
